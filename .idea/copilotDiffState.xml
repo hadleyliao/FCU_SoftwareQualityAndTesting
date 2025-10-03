@@ -3,52 +3,11 @@
   <component name="CopilotDiffPersistence">
     <option name="pendingDiffs">
       <map>
-        <entry key="$PROJECT_DIR$/pom.xml">
+        <entry key="$PROJECT_DIR$/logs/app.log">
           <value>
             <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/pom.xml" />
-              <option name="originalContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;org.example&lt;/groupId&gt;&#10;    &lt;artifactId&gt;HW&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;17&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;17&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;&#10;&lt;/project&gt;" />
-              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;org.example&lt;/groupId&gt;&#10;    &lt;artifactId&gt;HW&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;17&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;17&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;        &lt;log4j2.version&gt;2.20.0&lt;/log4j2.version&gt;&#10;    &lt;/properties&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;log4j-api&lt;/artifactId&gt;&#10;            &lt;version&gt;${log4j2.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;log4j-core&lt;/artifactId&gt;&#10;            &lt;version&gt;${log4j2.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;log4j-slf4j2-impl&lt;/artifactId&gt;&#10;            &lt;version&gt;${log4j2.version}&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.slf4j&lt;/groupId&gt;&#10;            &lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;&#10;            &lt;version&gt;2.0.7&lt;/version&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;&#10;&lt;/project&gt;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/org/example/Order.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/org/example/Order.java" />
-              <option name="updatedContent" value="package org.example;&#10;&#10;public class Order {&#10;    private final int id;&#10;    private OrderStatus status;&#10;    private final String customerName;&#10;    private final String restaurantName;&#10;&#10;    public Order(int id, String customerName, String restaurantName) {&#10;        this.id = id;&#10;        this.customerName = customerName;&#10;        this.restaurantName = restaurantName;&#10;        this.status = OrderStatus.PENDING;&#10;    }&#10;&#10;    public int getId() { return id; }&#10;    public OrderStatus getStatus() { return status; }&#10;    public void setStatus(OrderStatus status) { this.status = status; }&#10;    public String getCustomerName() { return customerName; }&#10;    public String getRestaurantName() { return restaurantName; }&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/org/example/OrderException.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/org/example/OrderException.java" />
-              <option name="updatedContent" value="package org.example;&#10;&#10;public class OrderException extends Exception {&#10;    public OrderException(String message) {&#10;        super(message);&#10;    }&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/org/example/OrderStatus.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/org/example/OrderStatus.java" />
-              <option name="updatedContent" value="package org.example;&#10;&#10;public enum OrderStatus {&#10;    PENDING, // 待處理&#10;    ACCEPTED, // 餐廳已接單&#10;    DELIVERING, // 外送中&#10;    COMPLETED, // 已完成&#10;    CANCELLED // 已取消&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/org/example/RestaurantService.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/org/example/RestaurantService.java" />
-              <option name="updatedContent" value="package org.example;&#10;&#10;import org.slf4j.Logger;&#10;import org.slf4j.LoggerFactory;&#10;&#10;public class RestaurantService {&#10;    private static final Logger logger = LoggerFactory.getLogger(RestaurantService.class);&#10;&#10;    public void acceptOrder(Order order) throws OrderException {&#10;        logger.info(&quot;餐廳收到訂單，準備接單，訂單編號: {}&quot;, order.getId());&#10;        if (order.getStatus() != OrderStatus.PENDING) {&#10;            logger.warn(&quot;訂單狀態異常，無法接單，訂單編號: {} 狀態: {}&quot;, order.getId(), order.getStatus());&#10;            throw new OrderException(&quot;訂單狀態異常，無法接單&quot;);&#10;        }&#10;        // 模擬業務邏輯錯誤&#10;        if (order.getRestaurantName().equals(&quot;壞掉的餐廳&quot;)) {&#10;            logger.error(&quot;餐廳系統異常，無法接單，訂單編號: {}&quot;, order.getId());&#10;            throw new OrderException(&quot;餐廳系統異常&quot;);&#10;        }&#10;        order.setStatus(OrderStatus.ACCEPTED);&#10;        logger.info(&quot;餐廳已成功接單，訂單編號: {}&quot;, order.getId());&#10;    }&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;Configuration status=&quot;WARN&quot;&gt;&#10;    &lt;Appenders&gt;&#10;        &lt;Console name=&quot;ConsoleAppender&quot; target=&quot;SYSTEM_OUT&quot;&gt;&#10;            &lt;PatternLayout pattern=&quot;%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n&quot;/&gt;&#10;        &lt;/Console&gt;&#10;        &lt;File name=&quot;FileAppender&quot; fileName=&quot;logs/app.log&quot;&gt;&#10;            &lt;PatternLayout pattern=&quot;%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n&quot;/&gt;&#10;        &lt;/File&gt;&#10;    &lt;/Appenders&gt;&#10;    &lt;Loggers&gt;&#10;        &lt;Root level=&quot;info&quot;&gt;&#10;            &lt;AppenderRef ref=&quot;ConsoleAppender&quot;/&gt;&#10;            &lt;AppenderRef ref=&quot;FileAppender&quot;/&gt;&#10;        &lt;/Root&gt;&#10;        &lt;Logger name=&quot;org.example&quot; level=&quot;debug&quot; additivity=&quot;false&quot;&gt;&#10;            &lt;AppenderRef ref=&quot;ConsoleAppender&quot;/&gt;&#10;        &lt;/Logger&gt;&#10;    &lt;/Loggers&gt;&#10;&lt;/Configuration&gt;&#10;" />
+              <option name="filePath" value="$PROJECT_DIR$/logs/app.log" />
+              <option name="updatedContent" value="22:50:51.106 [main] INFO  org.example.RestaurantService - 餐廳收到訂單，準備接單，訂單編號: 1&#10;22:50:51.108 [main] INFO  org.example.RestaurantService - 餐廳已成功接單，訂單編號: 1&#10;22:50:51.108 [main] INFO  org.example.RestaurantService - 餐廳收到訂單，準備接單，訂單編號: 2&#10;22:50:51.108 [main] ERROR org.example.RestaurantService - 餐廳系統異常，無法接單，訂單編號: 2&#10;22:50:51.108 [main] ERROR org.example.HW01 - 業務邏輯錯誤: 餐廳系統異常&#10;22:50:51.109 [main] ERROR org.example.HW01 - 程式碼邏輯錯誤: 除以零&#10;java.lang.ArithmeticException: / by zero&#10;&#9;at org.example.HW01.runLogic(HW01.java:29) [classes/:?]&#10;&#9;at org.example.HW01.main(HW01.java:36) [classes/:?]&#10;&#10;Process finished with exit code 0&#10;" />
             </PendingDiffInfo>
           </value>
         </entry>

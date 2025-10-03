@@ -1,0 +1,4 @@
+2025-10-03 23:10:33.987 [main] INFO  org.example.RestaurantService - 餐廳收到訂單，準備接單，訂單編號: 1
+2025-10-03 23:10:33.991 [main] INFO  org.example.RestaurantService - 餐廳已成功接單，訂單編號: 1
+2025-10-03 23:10:33.991 [main] INFO  org.example.RestaurantService - 餐廳收到訂單，準備接單，訂單編號: 2
+2025-10-03 23:10:33.991 [main] ERROR org.example.RestaurantService - 餐廳系統異常，無法接單，訂單編號: 2

@@ -13,7 +13,7 @@
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>
         </Root>
-        <Logger name="org.example" level="debug" additivity="false">
+        <Logger name="org.example.HW01" level="debug" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
         </Logger>
     </Loggers>
